@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/toolbar"
+        android:elevation="5dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ib_toolbar"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/ToolbarTextView"
+            android:text="@string/setting_activity"
+            android:layout_marginStart="32dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/ItemLayout.Clickable"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_import_media"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/ItemTextView"
+            android:text="@string/import_media_package" />
+
+    </LinearLayout>
+
+    <View style="@style/ItemLine" />
+
+    <LinearLayout
+        style="@style/ItemLayout.Clickable"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_select_media"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/ItemTextView"
+            android:text="@string/pick_media_package" />
+
+    </LinearLayout>
+
+    <View style="@style/ItemLine" />
+
+    <LinearLayout
+        style="@style/ItemLayout.Clickable"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_select_folder"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/ItemTextView"
+            android:text="@string/play_media_in_folder" />
+
+    </LinearLayout>
+
+    <View style="@style/ItemLine" />
+
+    <LinearLayout
+        style="@style/ItemLayout.Clickable"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_exit_app"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/ItemTextView"
+            android:text="@string/exit_app" />
+
+    </LinearLayout>
+
+</LinearLayout>

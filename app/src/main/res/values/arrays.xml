@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type_song">
+        <item>.mp3</item>
+    </string-array>
+    <string-array name="type_image">
+        <item>.jpg</item>
+        <item>.jpeg</item>
+        <item>.bmp</item>
+        <item>.png</item>
+    </string-array>
+    <string-array name="type_video">
+        <item>.mp4</item>
+        <item>.avi</item>
+        <item>.mkv</item>
+        <item>.mov</item>
+        <item>.webm</item>
+    </string-array>
+</resources>

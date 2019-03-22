@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">播放器</string>
+
+    <string name="loading_please_wait">正在加载数据,请稍等…</string>
+    <string name="no_permission_to_read_external_storage">没有读取内部存储器的权限</string>
+
+    <string name="setting_activity">设置</string>
+    <string name="import_media_package">导入节目</string>
+    <string name="import_file_please_waiting">正在导入媒体文件，请稍等</string>
+    <string name="pick_media_package">选择节目</string>
+    <string name="play_media_in_folder">播放目录媒体</string>
+    <string name="exit_app">退出应用</string>
+</resources>

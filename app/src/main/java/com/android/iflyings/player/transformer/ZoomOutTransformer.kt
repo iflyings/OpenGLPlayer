@@ -1,0 +1,18 @@
+package com.android.iflyings.player.transformer
+
+import com.android.iflyings.player.MediaWindow
+import com.android.iflyings.player.info.MediaInfo
+
+class ZoomOutTransformer: MediaWindow.MediaTransformer {
+
+    override fun transformMedia(mediaInfo: MediaInfo, position: Float) {
+        mediaInfo.reset()
+        when {
+            position <= -1 -> { mediaInfo.hide() }
+            position < 0 -> { mediaInfo.setAlpha(1 + position) }
+            position == 0f -> { mediaInfo.normal() }
+            position < 1 -> { mediaInfo.setScale(1.0f - position, 1.0f - position, 1.0f) }
+            else -> { mediaInfo.hide() }
+        }
+    }
+}
